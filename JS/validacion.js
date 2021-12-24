@@ -25,7 +25,8 @@
 			charx.test(password.value) &&
 			password.value.length >= "8"){
 			password.style.borderBottom= "1px solid green"
-			} else {
+            btnentrar.style.opacity= "1";
+        } else {
                 password.style.borderBottom= "1px solid red"
 			}
 			});
