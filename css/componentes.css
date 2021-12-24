@@ -1,0 +1,35 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.boxshadow{
+    box-shadow: 0 0 3px 1px black, 0 0 10px 0 black;
+}
+.transition{
+    transition: 1s ease;
+}
+.transition05{
+    transition: .5s ease;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    border: 1px solid #00000030;
+    border-radius: 10px;
+    background-color: #00000040;
+}
+.overflow{
+    overflow: hidden;
+}
+.hover:hover{
+    transform: scale(1.1);
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+li:hover{
+    filter: brightness(50%);
+}

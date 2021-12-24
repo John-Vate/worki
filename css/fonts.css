@@ -1,0 +1,16 @@
+@font-face {
+    font-family: consola ;
+    src: url(/fontes/Consolas-Font/CONSOLA.TTF);
+}@font-face {
+    font-family: consolab ;
+    src: url(/fontes/Consolas-Font/CONSOLAB.TTF);
+}@font-face {
+    font-family: consolai;
+    src: url(/fontes/Consolas-Font/consolai.ttf);
+}@font-face {
+    font-family: consolas ;
+    src: url(/fontes/Consolas-Font/Consolas.ttf);
+}@font-face {
+    font-family: consolaz ;
+    src: url(/fontes/Consolas-Font/consolaz.ttf);
+}
