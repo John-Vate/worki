@@ -12,33 +12,99 @@
     font-family: consola;
 }
 body{
-    background-image: url(/assets/background2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #1a1a1a;
     color: var(--text-primary);
     width: 100vw;
     height: 100vh;
     transition: 1s ease;
 }
 #l-header{
-    background-color: var(--surface);
+    background-color: #333;
     width: 100%;
-    height: 0px;
+    height: 40px;
     position: relative;
-    overflow: hidden;
     transition: 1s;
+    z-index: 1000;
+}
+#imgperfil{
+    border-radius: 50%;
+}
+#perfil{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+#perfil::after{  
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s ease;
+}
+#perfil:hover::after{
+    content: "John";
+    width: 100px;
+    height: 20px;
+    background-color: #ffffff50;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    border-radius: 0 10px 10px 10px;
+}
+
+.searchbox{
+    position: absolute;
+    left: 100px;
+    background-color: #1a1a1a;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 40px;
+}
+#searchbox{
+    background-color: transparent;
+}
+#searchsvg{
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    cursor: pointer;
+}
+#searchsvg path{
+    fill: #777;
 }
 #l-nav{
     position: absolute;
-    background-color: #00000060;
+    background-color: #4d4d4d;
     width: 100%;
     height: 30px;
-    bottom: 10000px;
-    transition: 1s;
+    top: -50px;
+    transition: 1s ease;
+    z-index: 998;
+    display: flex;
+    justify-content: space-around;
+
 }
-#logobtn{
-    width: 30px;
+.logobtn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     cursor: pointer;
+    background-color: #333;
+    position: absolute;
+    bottom: -20px;
+    z-index: 999;
+}
+#logo40px{
+    width: 40px;
 }
 #ul-nav{
     gap: 40px;

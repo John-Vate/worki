@@ -5,7 +5,7 @@
     text-align: center;
 }
 .boxshadow{
-    box-shadow: 0 0 3px 1px #000000, 0 0 30px 1px #000000;
+    box-shadow: 0 0 1px 0px #000000, 0 0 5px 0px #000000;
 }
 .transition{
     transition: 1s ease;
@@ -39,19 +39,14 @@ li:hover{
 
 }
 input{
-    width: 300px;
-    padding: 10px;
     color: white;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid white;
     outline: none;
-    text-align: center;
 
 }
 input::placeholder{
     color: #ffffff90;
-    text-align: center;
 }
 .normal{
     width: 100%;
@@ -60,4 +55,13 @@ input::placeholder{
 a{
     color: white;
     text-decoration: none;
+}
+
+.c-card{
+    width: 200px;
+    height: 300px;
+    box-shadow:inset 1px 1px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 10px;
 }

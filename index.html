@@ -12,49 +12,28 @@
 
 </head>
 <body >
-    <header class="center overflow boxshadow" id="l-header">
-        <img class="hover" id="logobtn" src="assets/logo50px.png" alt="logo botão">
+    <header class="center boxshadow" id="l-header">
+        <div id="perfil" ><img class="normal" id="imgperfil" src="assets/background.jpg" alt=""></div>
+        <label for="inputsearch" class="searchbox">
+            <svg height="25" width="25" id="searchsvg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <input id="inputsearch" type="text" class="normal" >
+        </label>>
+        <div class="logobtn center" id="logobtn" ><img id="logo40px" class="hover"  src="assets/logo50px.png" alt="logo botão"></div>
     </header>
-    <nav class="center transition overflow" id="l-nav">
+    <nav class=" overflow" id="l-nav">
         <ul id="ul-nav" class="center">
-            <li>option</li>
-            <li>option</li>
-            <li>option</li>
+            <li>Perfil</li>
+            <li>Convidar</li>
+            <li>Eventos</li>
+        </ul>
+        <ul id="ul-nav" class="center">
+            <li>Temas</li>
+            <li>Configurações</li>
         </ul>
     </nav>
-    <main class="center" id="l-main">
-        <img id="logocenter" src="/assets/logo500px.png" alt="">
-        <div data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.2" class="center overflow boxshadow" id="container">
-            <div id="before"></div>
-            <div class="center normal transition " id="cardsig">
-                <h1 class="title">LOGAR</h1>
-                <form class="center normal" action="" id="formsig">
-                    <ul id="ulformsig" class="center ulform">
-                        <li class="li"><input autocomplete="off" type="email" id="email" placeholder="email"></li>
-                        <li class="li"><input autocomplete="off" type="password" id="password" placeholder="senha"></li>
-                        <p class="btnentrar" href="">ENTRAR</p>
-                        <p class="btntroca" id="btntroca" href="">NÃO TENHO CONTA</p>
-                    </ul>
-                </form>
-            </div>
-            <div class="center normal transition" id="cardlog">
-                    <h1 class="title">CADASTRAR</h1>
-                    <form class="center normal form" action="" id="formlog">
-                        <ul id="ulformlog" class="ulform center">
-                            <li class="li"><input autocomplete="off" type="txt" id="nome" placeholder="nome"></li>
-                            <li class="li"><input autocomplete="off" type="email" id="email" placeholder="email"></li>
-                            <li class="li"><input autocomplete="off" type="password" id="password" placeholder="senha"></li>
-                            <li class="li"><input autocomplete="off" type="password" id="confirmpassword" placeholder="repita a senha"></li>
-                            <p class="btnentrar" href="">ENTRAR</p>
-                            <p id="btntrocavolta"   class="btntroca" href="">JÁ TENHO CONTA</p>
-                        </ul>
-                    </form>
-            </div>
-        </div>
     </main>
     <footer id="l-footer"></footer>
     <script src="JS/script.js"></script>
-    <script src="JS/validacion.js"></script>
-    <script type="text/javascript" src="JS/vanilla-tilt.js"></script>
+    <script src="JS/variaveis.js"></script>
 </body>
 </html>
