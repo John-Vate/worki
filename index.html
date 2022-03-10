@@ -12,25 +12,75 @@
 
 </head>
 <body >
-    <header class="center boxshadow" id="l-header">
+    <header class="center" id="l-header">
         <div id="perfil" ><img class="normal" id="imgperfil" src="assets/background.jpg" alt=""></div>
         <label for="inputsearch" class="searchbox">
             <svg height="25" width="25" id="searchsvg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
             <input id="inputsearch" type="text" class="normal" >
-        </label>>
+        </label>
         <div class="logobtn center" id="logobtn" ><img id="logo40px" class="hover"  src="assets/logo50px.png" alt="logo botão"></div>
     </header>
     <nav class=" overflow" id="l-nav">
         <ul id="ul-nav" class="center">
             <li>Perfil</li>
-            <li>Convidar</li>
             <li>Eventos</li>
+            <li>Motoristas</li>
         </ul>
         <ul id="ul-nav" class="center">
-            <li>Temas</li>
+            <li id="tema"><span id="switch"></span></li>
             <li>Configurações</li>
         </ul>
     </nav>
+    <main>
+    <div class="initial" id="home">
+        <div class="buttons center">Produtos</div>
+        <div class="buttons center">Serviços</div>
+    </div>
+    <div class="initial" id="produtos">
+        <div class="buttons center">Infantil</div>
+        <div class="buttons center">Adulto</div>
+    </div>
+    <div class="initial" id="serviços">
+        <div class="buttons center">Infantil</div>
+        <div class="buttons center">Adulto</div>
+    </div>
+    <div class="initial" id="padulto">
+        <div class="buttons center" id="bebida">Bebida</div>
+        <div class="buttons center" id="papelaria">Papelaria</div>
+        <div class="buttons center" id="roupa">Roupa</div>
+        <div class="buttons center" id="beleza">Beleza</div>
+        <div class="buttons center" id="esporte">Esporte</div>
+        <div class="buttons center" id="comida">Comida</div>
+        <div class="buttons center" id="casa">Casa</div>
+        <div class="buttons center" id="lazer">Lazer</div>
+    </div>
+    <div class="initial" id="pinfantil">
+        <div class="buttons center" id="brinquedos">Brinquedos</div>
+        <div class="buttons center" id="roupas">Roupas</div>
+        <div class="buttons center" id="escolar">Escolar</div>
+    </div>
+    <div class="initial" id="sinfantil">
+        <div class="buttons center" id="imedico">Médico</div>
+        <div class="buttons center" id="ibaba">Baba</div>
+        <div class="buttons center" id="iescola">Escola</div>
+        <div class="buttons center" id="ibeleza">Beleza</div>
+    </div>
+    <div class="initial" id="sadulto">
+        <div class="buttons center" id="aeletricista">Eletricista</div>
+        <div class="buttons center" id="apetshop">Pet Shop</div>
+        <div class="buttons center" id="amecanico">Mecânico</div>
+        <div class="buttons center" id="amarcineiro">Marcineiro</div>
+        <div class="buttons center" id="aencanador">Encanador</div>
+        <div class="buttons center" id="amedico">Médico</div>
+        <div class="buttons center" id="aescola">Escola</div>
+        <div class="buttons center" id="abeleza">Beleza</div>
+        <div class="buttons center" id="ainformatica">Informática</div>
+        <div class="buttons center" id="aserralheiro">Serralheiro</div>
+        <div class="buttons center" id="ajardineiro">Jardineiro</div>
+        <div class="buttons center" id="apedreiro">Pedreiro</div>
+        <div class="buttons center" id="apintor">Pintor</div>
+        <div class="buttons center" id="aartes">Artes</div>
+    </div>
     </main>
     <footer id="l-footer"></footer>
     <script src="JS/script.js"></script>

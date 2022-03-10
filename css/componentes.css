@@ -4,9 +4,6 @@
     align-items: center;
     text-align: center;
 }
-.boxshadow{
-    box-shadow: 0 0 1px 0px #000000, 0 0 5px 0px #000000;
-}
 .transition{
     transition: 1s ease;
 }
@@ -32,11 +29,7 @@ li{
     cursor: pointer;
 }
 li:hover{
-    filter: brightness(50%);
-}
-.li:hover{
-    filter: brightness(100%);
-
+    color: var(--detals)
 }
 input{
     color: white;
@@ -64,4 +57,29 @@ a{
     7px 7px 20px 0px rgba(0,0,0,.1),
     4px 4px 5px 0px rgba(0,0,0,.1);
     border-radius: 10px;
+}
+.buttons{
+    border-bottom: 3px solid transparent;
+    border-radius: 4px 4px 4px 4px;
+    width: 150px;
+    height: 70px;
+    background-color: var(--light-surface);
+    cursor: pointer;
+}
+.buttons:hover{
+    border-bottom: 3px solid var(--detals);
+    
+}
+#nada{
+    display: none;
+}
+.initial{
+    margin-top: 60px;
+    width: 100%;
+    height: 80%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }

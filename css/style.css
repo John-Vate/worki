@@ -12,19 +12,21 @@
     font-family: consola;
 }
 body{
-    background-color: #1a1a1a;
-    color: var(--text-primary);
+    background-color: var(--primary);
+    color: var(--font);
     width: 100vw;
     height: 100vh;
     transition: 1s ease;
+    overflow: hidden;
 }
 #l-header{
-    background-color: #333;
+    background-color: var(--light-surface);
     width: 100%;
     height: 40px;
-    position: relative;
+    position: absolute;
     transition: 1s;
     z-index: 1000;
+    top:0;
 }
 #imgperfil{
     border-radius: 50%;
@@ -38,28 +40,27 @@ body{
     top: 5px;
     cursor: pointer;
 }
-#perfil::after{  
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
+.perfiltag{
+    position: absolute;
+    background-color: #ffffff70;
+    color: black;
+    padding: 5px;
     border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: all .3s ease;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    overflow: hidden;
+    transition: 1s ease;
+    opacity: 0;
+    z-index: 1000;
 }
-#perfil:hover::after{
-    content: "John";
-    width: 100px;
-    height: 20px;
-    background-color: #ffffff50;
-    position: absolute;
-    left: 20px;
-    top: 40px;
+.perfiltag:hover{
     border-radius: 0 10px 10px 10px;
+    left: 10px;
+    opacity: 1;
+    width: 100px;
+    top: 10px;
 }
-
 .searchbox{
     position: absolute;
     left: 100px;
@@ -68,6 +69,7 @@ body{
     height: 30px;
     border-radius: 10px;
     padding-left: 40px;
+    display: none;
 }
 #searchbox{
     background-color: transparent;
@@ -79,11 +81,11 @@ body{
     cursor: pointer;
 }
 #searchsvg path{
-    fill: #777;
+    fill: var(--light-surface);
 }
 #l-nav{
     position: absolute;
-    background-color: #4d4d4d;
+    background-color: var(--surface) ;
     width: 100%;
     height: 30px;
     top: -50px;
@@ -91,17 +93,11 @@ body{
     z-index: 998;
     display: flex;
     justify-content: space-around;
-
 }
 .logobtn{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    height: 100%;
     cursor: pointer;
-    background-color: #333;
-    position: absolute;
-    bottom: -20px;
-    z-index: 999;
+    background-color: transparent;
 }
 #logo40px{
     width: 40px;
@@ -109,10 +105,21 @@ body{
 #ul-nav{
     gap: 40px;
 }
+#tema{
+    border: 1px solid white;
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+#switch{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+}
 main{
     width: 100%;
     height: 100%;
-    position: relative;
 }
 #container{
     max-height: 500px ;
@@ -170,4 +177,28 @@ main{
 }
 .btnentrar:hover{
     filter: brightness(70%);
+}
+#home{
+    display: flex;
+}
+#serviços{
+    display: none;
+}
+#produtos{
+    display: none;
+}
+#padulto{
+    display: none;
+    
+}
+#pinfantil{
+    display: none;
+}
+
+#sadulto{
+    display: none;
+    
+}
+#sinfantil{
+    display: none;
 }
