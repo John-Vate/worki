@@ -11,9 +11,9 @@
     
 
 </head>
-<body >
+<body id="body" >
     <header class="center" id="l-header">
-        <div id="perfil" ><img class="normal" id="imgperfil" src="assets/background.jpg" alt=""></div>
+        <label for="rhome"><div id="perfil" ><img class="normal" id="imgperfil" src="assets/background.jpg" alt=""></div></label>
         <label for="inputsearch" class="searchbox">
             <svg height="25" width="25" id="searchsvg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
             <input id="inputsearch" type="text" class="normal" >
@@ -32,17 +32,27 @@
         </ul>
     </nav>
     <main>
+    <ul class="radio">
+        <input name="ck" type="radio" id="rhome" checked="true">
+        <input name="ck" type="radio" id="rservicos">
+        <input name="ck" type="radio" id="rprodutos">
+        <input name="ck" type="radio" id="rprodutos">
+        <input name="ck" type="radio" id="rpadulto">
+        <input name="ck" type="radio" id="rpinfantil">
+        <input name="ck" type="radio" id="rsadulto">
+        <input name="ck" type="radio" id="rsinfantil">
+    </ul>
     <div class="initial" id="home">
-        <div class="buttons center">Produtos</div>
-        <div class="buttons center">Serviços</div>
+        <label for="rprodutos"><div class="buttons center">Produtos</div></label>
+        <label for="rservicos"><div class="buttons center">Serviços</div></label>
     </div>
     <div class="initial" id="produtos">
-        <div class="buttons center">Infantil</div>
-        <div class="buttons center">Adulto</div>
+        <label for="rinfantil"><div class="buttons center">Infantil</div></label>
+        <label for="radulto"><div class="buttons center">Adulto</div></label>
     </div>
     <div class="initial" id="serviços">
-        <div class="buttons center">Infantil</div>
-        <div class="buttons center">Adulto</div>
+        <label for="rsinfantil"><div class="buttons center">Infantil</div></label>
+        <label for="rsadulto"><div class="buttons center">Adulto</div></label>
     </div>
     <div class="initial" id="padulto">
         <div class="buttons center" id="bebida">Bebida</div>

@@ -179,7 +179,7 @@ main{
     filter: brightness(70%);
 }
 #home{
-    display: flex;
+    display: none;
 }
 #serviços{
     display: none;
@@ -201,4 +201,9 @@ main{
 }
 #sinfantil{
     display: none;
+}
+.radio{
+    position: absolute;
+    top: 100px;
+    z-index: 1000;
 }
