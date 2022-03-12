@@ -11,7 +11,7 @@
     box-sizing: border-box;
     font-family: consola;
 }
-body{
+.body{
     background-color: var(--primary);
     color: var(--font);
     width: 100vw;
@@ -19,9 +19,13 @@ body{
     transition: 1s ease;
     overflow: hidden;
 }
+.temalight{
+    background-color: #f0f7f1;
+    color: black;
+}
 #l-header{
-    background-color: var(--primary);
-    filter: brightness(150%);
+    background-color: #00000070;
+    backdrop-filter: blur(100px);
     width: 100%;
     height: 40px;
     position: absolute;
@@ -30,12 +34,12 @@ body{
     top:0;
 }
 #imgperfil{
-    border-radius: 50%;
+    border-radius: 20%;
 }
-#perfil{
+#perfilicon{
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 20%;
     cursor: pointer;
 }
 .perfiltag{
@@ -75,11 +79,11 @@ body{
     cursor: pointer;
 }
 #searchsvg path{
-    fill: var(--primary);
+    fill: var(--detals);
 }
 #l-nav{
     position: absolute;
-    background-color: var(--surface) ;
+    background-color: #00000050;
     width: 100%;
     height: 30px;
     top: -50px;
@@ -96,23 +100,35 @@ body{
     position: absolute;
 }
 #logo40px{
-    width: 40px;
+    width: 60px;
 }
 #ul-nav{
     gap: 40px;
 }
+.colordetals{
+    background-color: var(--detals);
+}
 #tema{
-    border: 1px solid white;
     width: 40px;
     height: 20px;
     border-radius: 50px;
-    background-color: transparent;
+    background-color: #00000090;
+    filter: brightness(50%);
+    overflow: hidden;
+    cursor: default;
 }
-#switch{
-    background-color: red;
+.activeswitch{
+    margin-left: 20px;
+    background-color: #2eb1a1;
+}
+#btswitch{
     width: 20px;
     height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease;
 }
+
 main{
     width: 100%;
     height: 100%;
@@ -176,4 +192,7 @@ main{
 }
 #home{
     display: flex;
+}
+.colorprimary{
+    background-color: var(--primary);
 }

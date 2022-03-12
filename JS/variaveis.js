@@ -2,7 +2,8 @@
 
 let logobtn= document.querySelector("#logobtn")
 let nav= document.querySelector("#l-nav")
-let perfilIcon= document.querySelector("#perfil")
+let perfilicon = document.querySelector("#perfilicon")
+let btswitch = document.querySelector("#btswitch")
 
 // Main
 

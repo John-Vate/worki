@@ -63,7 +63,8 @@ a{
     border-radius: 4px 4px 4px 4px;
     width: 150px;
     height: 70px;
-    background-color: var(--primary);
+    background-color: #00000050;
+    filter: invert(100%);
     filter: brightness(150%);
     cursor: pointer;
 }

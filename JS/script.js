@@ -1,9 +1,18 @@
 
-logobtn.addEventListener("click", ()=>{
+perfilicon.addEventListener("click", ()=>{
     nav.classList.toggle("activenav")
 })
 var now = home
 
+logobtn.addEventListener("click", ()=>{
+    home.style.display = "flex"
+    servicos.style.display = "none"
+    produtos.style.display ="none"
+    padulto.style.display ="none"
+    pinfantil.style.display ="none"
+    sadulto.style.display ="none"
+    sinfantil.style.display ="none"
+})
 btservicos.addEventListener("click", ()=>{
     home.style.display = "none"
     servicos.style.display = "flex"
@@ -59,7 +68,10 @@ btpinfantil.addEventListener("click", ()=>{
     sinfantil.style.display ="none"
 })
 
-
+btswitch.addEventListener("click", ()=>{
+    btswitch.classList.toggle("activeswitch")
+    document.querySelector("body").classList.toggle("temalight")
+})
 
 
 
@@ -68,15 +80,3 @@ btpinfantil.addEventListener("click", ()=>{
 
 
 var perfilname = "John"
-
-window.onload = perfil()
-function perfil(){
-
-    let perfilIcon= document.querySelector("#perfil")
-    let perfil= document.createElement("div")
-    perfil.innerText = perfilname
-    
-    perfilIcon.appendChild(perfil)
-    perfil.classList.add("perfiltag")
-    
-}
