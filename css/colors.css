@@ -1,9 +1,6 @@
 :root{
-    --primary: #1e1f29;
-    --surface: #282a36;
-    --light-primary: #282a36;
-    --light-surface: #3e4153;
+    --primary: #212226;
     --font: #f0f7f1;
-    --detals: #664d90;
-    --detals2: #7eed89;
+    --detals:#aa4ff5;
+    --detals2: #ea80fc;
 }

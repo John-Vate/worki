@@ -19,11 +19,11 @@ let sinfantil = document.querySelector("#sinfantil")
 // buttons
 
 let rhome = document.querySelector("#rhome")
-let rservicos =  document.querySelector("#rservicos")
-let rprodutos =  document.querySelector("#rprodutos")
-let rpadulto =  document.querySelector("#rpadulto")
-let rpinfantil = document.querySelector("#rpinfantil")
-let rsadulto = document.querySelector("#rsadulto")
-let rsinfantil = document.querySelector("#rsinfantil")
+let btservicos =  document.querySelector("#btservicos")
+let btprodutos =  document.querySelector("#btprodutos")
+let btpadulto =  document.querySelector("#btpadulto")
+let btpinfantil = document.querySelector("#btpinfantil")
+let btsadulto = document.querySelector("#btsadulto")
+let btsinfantil = document.querySelector("#btsinfantil")
 
 // Footer

@@ -63,15 +63,13 @@ a{
     border-radius: 4px 4px 4px 4px;
     width: 150px;
     height: 70px;
-    background-color: var(--light-surface);
+    background-color: var(--primary);
+    filter: brightness(150%);
     cursor: pointer;
 }
 .buttons:hover{
     border-bottom: 3px solid var(--detals);
     
-}
-#nada{
-    display: none;
 }
 .initial{
     margin-top: 60px;
@@ -82,4 +80,8 @@ a{
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    transition: all 1s ease;
+}
+.c_none{
+    display: none;
 }
