@@ -90,7 +90,6 @@ btpinfantil.addEventListener("click", ()=>{
 
 btswitch.addEventListener("click", ()=>{
     btswitch.classList.toggle("activeswitch")
-    shop.classList.toggle("shopactive")
     document.querySelector("body").classList.toggle("temalight")
 })
 
