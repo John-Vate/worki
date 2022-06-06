@@ -1,0 +1,11 @@
+@import url(colors.css);
+
+
+.bodyperfil{
+    background-color: var(--secundary);
+    color: var(--font);
+    width: 100vw;
+    height: 100vh;
+    transition: 1s ease;
+    overflow: hidden;
+}

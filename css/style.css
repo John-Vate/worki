@@ -1,16 +1,22 @@
 @import url(colors.css);
 @import url(componentes.css);
 @import url(active.css);
-@import url(fonts.css)
+@import url(fonts.css);
+@import url(perfil.css);
 
-:root{
-    --magic: 200px;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: consola;
+}
+.bodyperfil{
+    background-color: var(--secundary);
+    color: var(--font);
+    width: 100vw;
+    height: 100vh;
+    transition: 1s ease;
+    overflow: hidden;
 }
 .preload{
     display: flex;
@@ -22,10 +28,6 @@
     height: 100vh;
     background-color: var(--primary);
 }
-button{
-    background-color: none;
-    border: none;
-}
 .container{
     display: none;
     width: 100%;
@@ -33,14 +35,6 @@ button{
 }
 .body{
     background-color: var(--primary);
-    color: var(--font);
-    width: 100vw;
-    height: 100vh;
-    transition: 1s ease;
-    overflow: hidden;
-}
-.bodyperfil{
-    background-color: var(--secundary);
     color: var(--font);
     width: 100vw;
     height: 100vh;
