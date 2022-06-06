@@ -68,6 +68,7 @@ a{
     height: 70px;
     background-color: var(--secundary);
     cursor: pointer;
+    color: white;
 }
 .buttons:hover{
     border-bottom: 3px solid var(--detals);
