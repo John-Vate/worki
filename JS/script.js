@@ -63,18 +63,6 @@ function zero(){
     sadulto.style.display ="none"
     sinfantil.style.display ="none"
 }
-btnhome.addEventListener("click", ()=>{
-    zero()
-    home.style.display = "flex"
-})
-btnservicos.addEventListener("click", ()=>{
-    zero()
-    servicos.style.display = "flex"   
-})
-btnprodutos.addEventListener("click", ()=>{
-    zero()
-    produtos.style.display = "flex"
-})
 logobtn.addEventListener("click", ()=>{
     zero()
     home.style.display = "flex"

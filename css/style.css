@@ -10,14 +10,6 @@
     box-sizing: border-box;
     font-family: consola;
 }
-.bodyperfil{
-    background-color: var(--secundary);
-    color: var(--font);
-    width: 100vw;
-    height: 100vh;
-    transition: 1s ease;
-    overflow: hidden;
-}
 .preload{
     display: flex;
     justify-content: center;
@@ -88,6 +80,9 @@
     bottom: 10px;
     width: 55px;
     height: 35px;
+}
+#sadulto{
+    overflow-y: scroll;
 }
 .sacar{
 
@@ -281,8 +276,11 @@
 }
 
 main{
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 50px);
+    margin-top: 50px;
+
 }
 #container{
     max-height: 500px ;
