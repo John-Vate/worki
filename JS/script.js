@@ -36,7 +36,7 @@ let btnprodutos = document.querySelector(".btnprodutos")
 let body = document.querySelector(".body")
 let preload = document.querySelector(".preload")
 let container = document.querySelector(".container")
-let shop = document.querySelectorAll(".shops")
+let shop = document.querySelector(".shops")
 
 function loading(){
     container.style.display= "flex"
