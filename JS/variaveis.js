@@ -1,11 +1,11 @@
 // Header
 
 let logobtn= document.querySelector("#logobtn")
-let nav= document.querySelector("#l-nav")
+let nav= document.querySelector(".l-nav")
 let perfilicon = document.querySelector("#perfilicon")
-let btswitch = document.querySelector("#btswitch")
+let btswitch = document.querySelector(".btswitch")
 
-// Main
+// =================== Main ==================
 
 // cards
 
@@ -27,4 +27,8 @@ let btpinfantil = document.querySelector("#btpinfantil")
 let btsadulto = document.querySelector("#btsadulto")
 let btsinfantil = document.querySelector("#btsinfantil")
 
-// Footer
+// ===================== Footer ===================
+
+let btnservicos = document.querySelector(".btnservicos")
+let btnhome = document.querySelector(".btnhome")
+let btnprodutos = document.querySelector(".btnprodutos")

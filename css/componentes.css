@@ -27,6 +27,7 @@
 li{
     list-style: none;
     cursor: pointer;
+    margin: 0 8px;
 }
 li:hover{
     color: var(--detals)
@@ -60,12 +61,10 @@ a{
 }
 .buttons{
     border-bottom: 3px solid transparent;
-    border-radius: 4px 4px 4px 4px;
+    border-radius: 4px;
     width: 150px;
     height: 70px;
-    background-color: #00000060;
-    filter: invert(100%);
-    filter: brightness(150%);
+    background-color: var(--secundary);
     cursor: pointer;
 }
 .buttons:hover{
@@ -73,7 +72,8 @@ a{
     
 }
 .initial{
-    margin-top: 60px;
+    display: flex;
+    margin-top: 0px;
     width: 100%;
     height: 80%;
     position: relative;
@@ -83,6 +83,35 @@ a{
     gap: 10px;
     transition: all 1s ease;
 }
-.c_none{
-    display: none;
+.store{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--third);
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: var(--secundary);
+}
+.shops{
+    width: 100px;
+    height: 120px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.shops:hover{
+    color: var(--detals);
 }

@@ -1,7 +1,8 @@
 @import url(colors.css);
 @import url(componentes.css);
 @import url(active.css);
-@import url(fonts.css);
+@import url(fonts.css)
+
 :root{
     --magic: 200px;
 }
@@ -11,6 +12,19 @@
     box-sizing: border-box;
     font-family: consola;
 }
+.preload{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary);
+}
+.container{
+    display: none;
+}
 .body{
     background-color: var(--primary);
     color: var(--font);
@@ -19,11 +33,36 @@
     transition: 1s ease;
     overflow: hidden;
 }
+.perfil{
+    display:none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+    flex-wrap: wrap;
+}
+.perfilfoto{
+    width: 100px;
+    height: 100px;
+    border-radius: 25px ;
+    border: 1px solid red;
+}
+.contentperfil{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 70%;
+    gap: 20px;
+}
 .temalight{
     background-color: white;
 }
-#l-header{
-    background-color: #00000070;
+.l-header{
+    background-color: var(--secundary);
     backdrop-filter: blur(100px);
     width: 100%;
     height: 40px;
@@ -62,27 +101,18 @@
     width: 100px;
     top: 10px;
 }
-.searchbox{
-    position: absolute;
-    left: 2%;
-    background-color: transparent;
-    width: 10px;
-    height: 30px;
-    border-radius: 10px;
-    padding-left: 40px;
-}
 #searchsvg{
     position: absolute;
     left: 7px;
-    top: 3px;
     cursor: pointer;
+    display: none;
 }
 #searchsvg path{
     fill: var(--detals);
 }
-#l-nav{
+.l-nav{
     position: absolute;
-    background-color: #00000050;
+    background-color: var(--third);
     width: 100%;
     height: 30px;
     top: -50px;
@@ -101,13 +131,10 @@
 #logo40px{
     width: 60px;
 }
-#ul-nav{
-    gap: 40px;
-}
 .colordetals{
     background-color: var(--detals);
 }
-#tema{
+.tema{
     width: 40px;
     height: 20px;
     border-radius: 50px;
@@ -116,16 +143,17 @@
     overflow: hidden;
     cursor: default;
 }
-.activeswitch{
-    margin-left: 20px;
-    background-color: #2eb1a1;
-}
-#btswitch{
+.btswitch{
     width: 20px;
     height: 20px;
     border-radius: 50%;
     cursor: pointer;
     transition: 1s ease;
+    background-color: var(--detals);
+}
+.activeswitch{
+    margin-left: 20px;
+    background-color: white;
 }
 
 main{
@@ -142,13 +170,7 @@ main{
     border-top: 1px solid #ffffff70;
     border-left: 1px solid #ffffff70;
     border-right: 1px solid #00000050;
-    border-bottom: 1px solid #00000050;
-    backdrop-filter: blur(10px);
-    position: relative;
-}
-#logocenter{
-    width: 100px;
-    position: absolute;
+    border-bottom: perfil"ute;
     top: 40px;
 }
 .title{
@@ -189,9 +211,38 @@ main{
 .btnentrar:hover{
     filter: brightness(70%);
 }
-#home{
+.flex{
     display: flex;
 }
 .colorprimary{
     background-color: var(--primary);
+}
+
+.nada{
+    display: none;
+}
+.btnball:hover{
+    background-color: var(--detals);
+}
+.btnball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--secundary);
+    bottom: 60px;
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    border: 2px solid var(--detals);
+    margin: 0 10px;
+    transition: .7s ease;
+    box-shadow: inset 0 0 5px 0 var(--detals);
+}
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: var(--secundary);
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
 }
