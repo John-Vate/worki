@@ -35,6 +35,9 @@
     transition: 1s ease;
     overflow: hidden;
 }
+.shopactive{
+    color: black;
+}
 .perfil{
     display:none;
     justify-content: flex-start;

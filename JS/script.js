@@ -36,6 +36,7 @@ let btnprodutos = document.querySelector(".btnprodutos")
 let body = document.querySelector(".body")
 let preload = document.querySelector(".preload")
 let container = document.querySelector(".container")
+let shop = document.querySelector(".shop")
 
 function loading(){
     container.style.display= "flex"
@@ -101,6 +102,7 @@ btpinfantil.addEventListener("click", ()=>{
 
 btswitch.addEventListener("click", ()=>{
     btswitch.classList.toggle("activeswitch")
+    shop.classList.toggle("shopactive")
     document.querySelector("body").classList.toggle("temalight")
 })
 
