@@ -50,6 +50,7 @@ a{
     color: white;
     text-decoration: none;
     margin: 0;
+    width: auto;
 }
 
 .c-card{
