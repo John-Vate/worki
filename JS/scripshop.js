@@ -22,10 +22,11 @@ let body = document.querySelector(".body")
 let preload = document.querySelector(".preload")
 let container = document.querySelector(".container")
 
-body.addEventListener("load", ()=>{
+function loading(){
     container.style.display= "flex"
     preload.style.display= "none"
-})
+}
+
 
 
 
