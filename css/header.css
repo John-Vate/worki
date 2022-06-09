@@ -1,0 +1,52 @@
+.l-header{
+    background-color: var(--secundary);
+    backdrop-filter: blur(100px);
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    transition: 1s;
+    z-index: 1000;
+    top:0;
+}
+#perfilicon{
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.logobtn{
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    right: 10px;
+    position: absolute;
+}
+
+.l-nav{
+    position: absolute;
+    background-color: var(--third);
+    width: 100%;
+    height: 30px;
+    top: -50px;
+    transition: 1s ease;
+    z-index: 998;
+    display: flex;
+    justify-content: space-around;
+}
+.tema{
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: var(--primary);
+    overflow: hidden;
+    cursor: default;
+}
+.btswitch{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease;
+    background-color: var(--detals);
+}

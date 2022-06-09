@@ -39,12 +39,11 @@ let container = document.querySelector(".container")
 let shop = document.querySelector(".store")
 
 function loading(){
+    zero()
     container.style.display= "flex"
     preload.style.display= "none"
+    home.style.display = "flex"
 }
-
-
-
 perfilicon.addEventListener("click", ()=>{
     nav.classList.toggle("activenav")
 })

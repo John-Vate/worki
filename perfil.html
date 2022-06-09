@@ -7,22 +7,23 @@
     <meta name="description" content="simples e completo, apenas um shopping online">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Worki</title>
-    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="loading()" class="bodyperfil" >
-<div style="display:none" class="preloa"><img src="assets/preload/364.gif" alt="preload"></div>
-<div  class="container ccc">
+<body onload="loading()">
+<div class="preload"><img src="assets/preload/364.gif" alt="preload"></div>
+<div class="container">
+    <a class="logoperfil" href="index.html"><img  class="hover"  src="assets/logo50px.png" alt="logo botão"></a>
     <div class="perfilcontent">
-        <div class="imgperfil"></div>
+        <img src="assets/background1.jpg" class="imgperfil">
         <h1>John</h1>
         <div class="convites">55 pessoas convidadas</div>
-        <button class="convidar buttons">Convidar</button>
+        <button id="convidar" class="buttons">Convidar</button>
         <div class="lucro">R$155,00</div>
-        <button class="sacar buttons">Sacar</button>
-        <button class="logout buttons">sair</button>
+        <button id="sacar" class="buttons">Sacar</button>
+        <button id="sair" class="buttons">sair</button>
 
     </div>
 </div>
-    <script src="JS/script.js"></script>
+    <script src="JS/preload.js"></script>
 </body>
 </html>
