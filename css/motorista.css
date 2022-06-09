@@ -1,10 +1,52 @@
+.logoperfil{
+    position: absolute;
+    top: 15px;
+}
+.imgperfil{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+#sacar{
+    width: 115px;
+    height: 35px;
+}
+#convidar{
+    width: 115px;
+    height: 35px;
+}
+#sair{
+    bottom: 20px;
+    position: absolute;
+    width: 50px;
+    height: 25px;
+}
+.motoristacontent{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+    justify-content: space-around;
+    box-shadow: 0 0 15px 5px var(--detals);
+    border-radius: 5px;
+    gap: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+
+
 .motorist{
     display: flex;
     flex-direction: column;
-    width: 150px;
-    height: 150px;
+    width: 70px;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
+    margin: 20px 0;
 }
 .motoristas{
     display: flex;
@@ -38,9 +80,10 @@
 .imgmotorist{
     position: relative;
     overflow: hidden;
-    width: 120px;
-    height: 120px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+
 }
 .stars1{
     width: 10px;
