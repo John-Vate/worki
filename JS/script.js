@@ -44,9 +44,6 @@ function loading(){
     preload.style.display= "none"
     home.style.display = "flex"
 }
-perfilicon.addEventListener("click", ()=>{
-    nav.classList.toggle("activenav")
-})
 
 btservicos.addEventListener("click", ()=>{
     zero()
