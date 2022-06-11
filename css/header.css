@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     background-color: var(--secundary);
-    backdrop-filter: blur(100px);
     width: 100%;
     height: 40px;
     position: absolute;
@@ -12,9 +11,13 @@
     justify-content: space-between;
 }
 .perfilheader{
-    width: 40px;
-    height:40px;
+    width: 39px;
+    height:39px;
     margin-left: 10px;
+    cursor: pointer;
+}
+.perfilheader:hover{
+
 }
 .name{
     position: absolute;
@@ -54,4 +57,15 @@
     cursor: pointer;
     transition: 1s ease;
     background-color: var(--detals);
+}
+.effect{
+    width: 0px;
+    height: 1px;
+    background-color: var(--detals);
+    z-index: 1000;
+    margin-top: 40px;
+    transition: 1s ease-in;
+}
+.l-header:hover ~ .effect{
+    width: 100vw;
 }

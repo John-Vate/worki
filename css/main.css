@@ -2,9 +2,7 @@
 main{
     position: relative;
     width: 100%;
-    height: calc(100% - 50px);
-    margin-top: 50px;
-
+    overflow: auto;
 }
 .container{
     position: relative;

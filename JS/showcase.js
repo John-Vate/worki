@@ -18,8 +18,6 @@ let btnservicos = document.querySelector(".btnservicos")
 let btnhome = document.querySelector(".btnhome")
 let btnprodutos = document.querySelector(".btnprodutos")
 
-let body = document.querySelector(".body")
-let shop = document.querySelector(".store")
 
 
 
@@ -29,7 +27,6 @@ perfilheader.addEventListener('click', ()=>{
 
 btswitch.addEventListener("click", ()=>{
     btswitch.classList.toggle("activeswitch")
-    shop.classList.toggle("shopactive")
     document.querySelector("body").classList.toggle("temalight")
 })
 

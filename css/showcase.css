@@ -1,0 +1,81 @@
+@media only screen and (max-width:700px ){
+    .mainshowcase{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0 0 50px 0;
+        align-items: center;
+        text-align: center;
+    }
+    .ladoa{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .description{
+    width: 90%;
+    }
+  }
+@media only screen and (min-width:700px){
+    .mainshowcase{
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        padding: 0 0 50px 0;
+        text-align: center;
+        position: fixed;
+        top: 50px;
+        
+    }
+    .svgpack{
+        position: absolute;
+        bottom: -50px;
+        left: 40%;
+    }
+
+    .showcaselogo{
+        position: absolute;
+        left: 45%;
+    }
+    .tittleshow{
+        position: absolute;
+        left: 45%;
+        top: 100px;
+    }
+    .description{
+        position: absolute;
+        top: 150px ;
+        margin-right: 25px;
+        max-width: 700px;
+    }
+  }
+
+.ladoa{
+    width: 850px;
+}
+
+.showcaselogo{
+    width: 100px;
+    height: 100px;
+}
+.description{
+    margin-bottom: 25px;
+}
+.showrating{
+    width: 100px;
+    height: 100px;
+}
+.tittleshow{
+    margin-bottom: 10px;
+}
+.showsvg{
+    width: 35px;
+    height: 35px;
+    margin: 50px 15px;
+    cursor: pointer;
+    fill: var(--font);
+}
+.showsvg:hover{
+    transform: scale(1.1);
+}
+    

@@ -2,7 +2,7 @@
 
 let logobtn= document.querySelector("#logobtn")
 let nav= document.querySelector(".l-nav")
-let perfilicon = document.querySelector("#perfilicon")
+let perfilheader = document.querySelector(".perfilheader")
 let btswitch = document.querySelector(".btswitch")
 
 // =================== Main ==================
@@ -37,6 +37,10 @@ let body = document.querySelector(".body")
 let preload = document.querySelector(".preload")
 let container = document.querySelector(".container")
 let shop = document.querySelector(".store")
+
+perfilheader.addEventListener('click', ()=>{
+    nav.classList.toggle("activenav")
+})
 
 function loading(){
     zero()
