@@ -11,6 +11,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        width: 300px;
     }
     .description{
     width: 90%;
@@ -48,10 +49,12 @@
         margin-right: 25px;
         max-width: 700px;
     }
+    .ladoa{
+        width: 750px;
+    }
   }
 
 .ladoa{
-    width: 850px;
 }
 
 .showcaselogo{
