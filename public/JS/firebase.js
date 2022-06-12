@@ -1,5 +1,5 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.mjs";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.mjs";
 import { getAuth, getRedirectResult ,signInWithRedirect ,GoogleAuthProvider} from "firebase/auth"
 
 
