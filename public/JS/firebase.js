@@ -1,6 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
 import { getAuth, getRedirectResult ,signInWithRedirect ,GoogleAuthProvider} from "firebase/auth"
+import { app } from "../../services/firebaseConfig"
 
 const provider = new GoogleAuthProvider()
 
@@ -9,7 +10,7 @@ const auth = getAuth();
 
 
 function login(){
-  const auth = getAuth();
+  const auth = getAuth(app);
   const sigInGoogle = ()=>{
     signInWithRedirect(auth, provider);
     .then((result) => {
