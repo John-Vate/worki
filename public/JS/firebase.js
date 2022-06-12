@@ -1,31 +1,30 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
 import { getAuth, getRedirectResult ,signInWithRedirect ,GoogleAuthProvider} from "firebase/auth"
-import { app } from "../../services/firebaseConfig"
-
-const provider = new GoogleAuthProvider()
-
-const auth = getAuth();
 
 
+var provider = new firebase.auth.GoogleAuthProvider()
 
-export const login = ()=>{
-  const auth = getAuth(app);
-  const sigInGoogle = ()=>{
-    signInWithRedirect(auth, provider);
-    .then((result) => {
-    const credential = GoogleAuthProvider.credentialFromResult(result);
-    const token = credential.accessToken;
-    const user = result.user;
+function login(){
+  firebase.auth().signInWithRedirect(provider)
+  firebase.auth()
+  .getRedirectResult()
+  .then((result) => {
+    if (result.credential) {
+      var credential = result.credential;
+      var token = credential.accessToken;
+    }
+    var user = result.user;
   }).catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    const email = error.customData.email;
-    const credential = GoogleAuthProvider.credentialFromError(error);
-  });
-  }
-
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    var email = error.email;
+    var credential = error.credential;
+  })
+  console.log(user)
 }
+
+
 
 
 

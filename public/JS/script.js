@@ -47,7 +47,7 @@ function loading(){
     container.style.display= "flex"
     preload.style.display= "none"
     home.style.display = "flex"
-    sigInGoogle
+    login()
 }
 
 btservicos.addEventListener("click", ()=>{
