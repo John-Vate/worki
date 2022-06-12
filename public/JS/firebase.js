@@ -9,7 +9,7 @@ const auth = getAuth();
 
 
 
-function login(){
+export const login = ()=>{
   const auth = getAuth(app);
   const sigInGoogle = ()=>{
     signInWithRedirect(auth, provider);
