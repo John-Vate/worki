@@ -47,6 +47,7 @@ function loading(){
     container.style.display= "flex"
     preload.style.display= "none"
     home.style.display = "flex"
+    login()
 }
 
 btservicos.addEventListener("click", ()=>{

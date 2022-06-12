@@ -1,3 +1,4 @@
+import { getAuth } from "firebase/auth"
 
 let preload = document.querySelector(".preload")
 let container = document.querySelector(".container")

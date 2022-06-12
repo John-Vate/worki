@@ -58,14 +58,6 @@
     transition: 1s ease;
     background-color: var(--detals);
 }
-.effect{
-    width: 0px;
-    height: 1px;
-    background-color: var(--detals);
-    z-index: 1000;
-    margin-top: 40px;
-    transition: 1s ease-in;
-}
 .l-header:hover ~ .effect{
     width: 100vw;
 }
